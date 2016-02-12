@@ -14,6 +14,7 @@ Developer @GA in NYC
      -moz-box-sizing: border-box; /* Firexfox */
      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
      box-sizing: border-box; /* IE */
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Clear fix hack */
@@ -48,12 +49,7 @@ Developer @GA in NYC
 
 /* HEADER */
   
-html {
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-a {
+.nav_aTags {
   text-decoration: none;
   color: white;
 }
@@ -71,11 +67,12 @@ a {
       text-decoration: none;
   }
 
-header {
+.nav_header {
     width: 100%;
     background-color: #000;
     height: 75px;
-    display: inline-block;
+    /*display: inline-block;*/
+    border-bottom: 2px solid yellow;
 }
 
 .logo {
@@ -102,29 +99,8 @@ header {
   text-decoration: none;
 }
 
-a:hover {
+.nav_aTags:hover {
   color: #fdf731;
-}
-
-#blog {
-  background-color: #666666;
-  padding: 5px 10px 5px 10px;
-}
-#designers {
-  background-color: #666666;
-  padding: 5px 10px 5px 10px;
-}
-#developers {
-  background-color: #666666;
-  padding: 5px 10px 5px 10px;
-}
-#how_it_works {
-  background-color: #666666;
-  padding: 5px 10px 5px 10px;
-}
-#our_team {
-  background-color: #666666;
-  padding: 5px 10px 5px 10px;
 }
 
 .navs_bold {
@@ -141,13 +117,6 @@ a:hover {
   margin-right: 20px;
 }
 
-.yellow_line {
-  width: 100%;
-  height: 8px;
-  border-color: #fdf731;
-  margin-top: -5px;
-}
-
 .tagline {
   width: 100%;
   height: 75px;
@@ -159,21 +128,222 @@ a:hover {
   font-style: italic;
   padding-top: 25px;
   box-sizing: 1px 1px 1px #666666;
+  text-align: center;
 }
-#taste {
+
+.yellow_line {
+  width: 100%;
+  height: 8px;
+  background-color: #fdf731;
+  margin-top: -5px;
+}
+
+.taste {
   color: #666666;
   text-decoration: line-through;
  }
- #are {
+ 
+.are {
   text-decoration: none;
   border-bottom: 3px;
   border-color: #fdf731;
   border-style: solid;
 }
 
-/* MID-SECTION */
+
+/******************************************
+/* middle section
+/*******************************************/
+
 
 .middle_section {
+  height: 550px;
+  width: 100%;
+  /*border: 1px solid red;*/
+  background: url('../images/coworking.jpg') center center no-repeat;
+  background-size: cover;  
+}
+
+.mid-content {
+  width: 475px;
+  height: 400px;
+  float: right;
+  background-color: rgba(255,255,255,.85);
+  margin: 14px 14px 0 0 ;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.meet_your_match {
+  font-family: 'Source Sans Pro', sans-serif;
+  /*padding: 40px 40px 50px 40px;*/
+/*  margin-top: 50px;
+  margin-right: 35px;
+  margin-bottom: 20px;*/
+    text-align: left;
+  line-height: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: light;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.create_a_profile {
+  background-color: #fdf731;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+ /* padding: 5px 50px 5px 50px;*/
+  border-radius: 4px;
+  letter-spacing: 1px;
+  /*margin-left: 20px;
+  margin-right: 15px;*/
+}
+
+
+/******************************************
+/* Columns
+/*******************************************/
+
+.bottom-section {
+  width: 100%;
+  height: 250px;
+}
+
+.box-title {
+  font-family: 'merriweather', bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+  text-align: left;
+} 
+
+
+.box1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 40px;
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 75px;
+  text-align: left;
+  border-right: 1px solid #c6c6c6;
+  margin-top: 15px;
+  line-height: 20px;
+  margin: 2rem 0;
+}
+
+.box2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 40px;
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 75px;
+  text-align: left;
+  border-right: 1px solid #c6c6c6;
+  margin-top: 15px;
+  line-height: 20px;
+  margin: 2rem 0;
+}
+
+.box3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 55px;
+  width: 33.33px;
+  float: right;  
+  text-align: left;
+  line-height: 20px;
+}
+
+button {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #c6c6c6;
+  padding: 8px 50px 8px 50px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+button:active {
+  background-color: #666;
+}
+#signup {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.box1 {
+  padding-top: 40px;
+  width: 300px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 75px;
+  text-align: left;
+  border-right: 1px solid #c6c6c6;
+  height: 200px;
+  margin-top: 15px;
+  line-height: 20px;
+}
+.box2 {
+  padding-top: 40px;
+  width: 300px;
+  float: left;
+  margin-right: 75px;
+  text-align: left;
+  border-right: 1px solid #c6c6c6;
+  height: 200px;
+  margin-top: 15px;
+  line-height: 20px;
+}
+.box3 {
+  padding-top: 55px;
+  width: 300px;
+  float: left;  
+  text-align: left;
+  line-height: 20px;
+}
+
+
+
+/******************************************
+/* Footer
+/*******************************************/
+
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
+.footer-content {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 35px;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+
+/* MID-SECTION 
+
+/*.middle_section {
   box-shadow: 5px black;
   background: url('../images/coworking.jpg');
   background-repeat: no-repeat;
@@ -298,7 +468,13 @@ footer {
   padding-top: 25px;
   margin-top: 10px;
   clear: both;
-}
+}*/
+
+
+
+
+
+
 
 
 
